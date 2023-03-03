@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Digital House</title>
+	</head>
+	<body>
+		<div>
+			<h1>Digital House - Infra II</h1>
+			<h4>Demo para balnceo de carga</h4>
+			<div>
+				<h4>Hostname EC2:</h4>
+				<h4 id="hostname"></h4>
+			</div>
+		</div>
+		<script>
+			window.addEventListener('load', function () {
+				var h = location.hostname;
+				document.getElementById('hostname').innerHTML = h;
+			});
+		</script>
+	</body>
+</html>
